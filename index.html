@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Henry Cayunda Jr. | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+      body {
+        background: #464646;
+      }
+    </style>
+  </head>
+  <body class="text-gray-100 bg-slate-900">
+    <header
+      class="border-b border-slate-700 py-10 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700"
+    >
+      <div
+        class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4"
+      >
+        <img
+          src="/images/profile.jpg"
+          alt="Profile"
+          class="w-40 h-40 object-cover rounded-xl shadow-lg ring-2 ring-indigo-500/50"
+        />
+        <!-- Intro text -->
+        <div class="text-center md:text-left">
+          <h1 class="text-4xl font-bold text-white">Henry Cayunda Jr.</h1>
+          <p class="text-lg text-indigo-300 mt-2">
+            Python Developer | Plone CMS | Google App Script
+          </p>
+          <p class="mt-4 ext-gray-300 leading-relaxed max-w-2xl">
+            Welcome! I'm Henry, a passionate
+            <strong>Python developer</strong> focusing on
+            <strong>Web Developement</strong> with <strong>Plone</strong>,
+            <strong>Dajgno</strong> and <strong>Google Apps Script</strong> I
+            build efficient and interactive web applications, automate
+            workflows, and create modern, responsive interfaces using
+            <strong>tailwindcss</strong>, <strong>Bootstrap</strong>, and
+            <strong>HTMX</strong>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="px-4 py-12 space-y-16 max-w-5xl mx-auto">
+      <section id="portfolio" class="space-y-12">
+        <h2
+          class="text-3xl font-semibold mb-6 border-b border-slate-600 pb-2 text-center"
+        >
+          Featured Projects
+        </h2>
+        <!-- Project 1-->
+        <div
+          class="bg-slate-800 rounded-2xl shadow-xl p-6 hover:shadow-indigo-600/20 transition"
+        >
+          <h3 class="text-2xl font-bold text-indigo-400">
+            Alumni Grant Scheme Monitoring
+          </h3>
+          <h5 class="text-lg mb-3">Australia Awards Philippines</h5>
+          <p class="text-gray-300 mb-6">
+            Developed an application for the Alumni Grant Scheme. This allows
+            users to submit Milestone and Completion Reports. The system tracks
+            workflow statuses for easier monitoring. It also sends email
+            notification to stakeholders based on the report status. The
+            application includes multiple sections like Progress on Workplan.
+            Status of Activities and Outputs, Risk Management/Monitoring. And
+            Fund Utilisation. There is also a comment section for feedback and
+            coordination.
+            <br />
+            <i>Technologies:</i>
+            <span class="font-semibold text-white"
+              >Plone, Python, HTMX, Javascript, HTML, CSS, Bootstrap</span
+            >
+          </p>
+
+          <div class="swiper project-swiper rounded-xl overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="/images/ags/1.png"
+                  alt="Alumni Search"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/images/ags/2.png"
+                  alt="Alumni Data"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/ags/3.png"
+                  alt="Alumni Records"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- Project 2-->
+        <div
+          class="bg-slate-800 rounded-2xl shadow-xl p-6 hover:shadow-indigo-600/20 transition"
+        >
+          <h3 class="text-2xl font-bold text-indigo-400">
+            Alumni Database Search
+          </h3>
+          <h5 class="text-lg mb-3">Australia Awards Philippines</h5>
+          <p class="text-gray-300 mb-6">
+            Developed an intranet search application that lets users to search
+            alumni by name, organisation, location and other criteria with
+            preset view options.
+            <br />
+            <i>Technologies:</i>
+            <span class="font-semibold text-white"
+              >Plone, Python, HTMX, Javascript, HTML, CSS, Bootstrap</span
+            >
+          </p>
+
+          <div class="swiper project-swiper rounded-xl overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="/images/alumni-database-search/1.png"
+                  alt="Alumni Search"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/images/alumni-database-search/2.png"
+                  alt="Alumni Data"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/alumni-database-search/3.png"
+                  alt="Alumni Records"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- Project 3-->
+        <div
+          class="bg-slate-800 rounded-2xl shadow-xl p-6 hover:shadow-indigo-600/20 transition"
+        >
+          <h3 class="text-2xl font-bold text-indigo-400">
+            Event Management & QR Confimation
+          </h3>
+          <h5 class="text-lg mb-3">Australia Awards Philippines</h5>
+          <p class="text-gray-300 mb-6">
+            Developed an event registration system with QR code-based attendance
+            confirmation. This will simplify event organization and eliminate
+            manual chick-ins and certificate sending
+            <br />
+            <i>Technologies:</i>
+            <span class="font-semibold text-white"
+              >Plone, Python, HTMX, Javascript, HTML, CSS, Bootstrap</span
+            >
+          </p>
+
+          <div class="swiper project-swiper rounded-xl overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="/images/event-management/1.png"
+                  alt="Alumni Search"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/images/event-management/2.png"
+                  alt="Alumni Data"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/event-management/3.png"
+                  alt="Alumni Records"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- Project 4-->
+        <div
+          class="bg-slate-800 rounded-2xl shadow-xl p-6 hover:shadow-indigo-600/20 transition"
+        >
+          <h3 class="text-2xl font-bold text-indigo-400">
+            ICSP Monthly Report
+          </h3>
+          <h5 class="text-lg mb-3">Australia Awards Philippines</h5>
+          <p class="text-gray-300 mb-6">
+            Developed a finance reimbursement system that lets scholars upload
+            required documents. It automatically sends email notifications to
+            the Program Officer, Finance, and Program Director based on the
+            request status. The system also has a search and filter feature by
+            status for easier navigation.
+            <br />
+            <i>Technologies:</i>
+            <span class="font-semibold text-white"
+              >Plone, Python, HTMX, Javascript, HTML, CSS, Bootstrap</span
+            >
+          </p>
+
+          <div class="swiper project-swiper rounded-xl overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="/images/icsp-monthly-reaport/1.png"
+                  alt="Alumni Search"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/images/icsp-monthly-reaport/2.png"
+                  alt="Alumni Data"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="images/icsp-monthly-reaport/1.png"
+                  alt="Alumni Records"
+                  class="w-full h-96 object-cover cursor-pointer"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- Project 5-->
+        <div
+          class="bg-slate-800 rounded-2xl shadow-xl p-6 hover:shadow-indigo-600/20 transition"
+        >
+          <h3 class="text-2xl font-bold text-indigo-400">Emailer Tool</h3>
+          <h5 class="text-lg mb-3">Australia Awards Philippines</h5>
+          <p class="text-gray-300 mb-6">
+            Developed an intranet emailing tool that uses template messages,
+            customizable signatures, and profile integrated prefill features.
+            This tool allows for efficient internal email blasts and reduces
+            error from manual input.
+            <br />
+            <i>Technologies:</i>
+            <span class="font-semibold text-white"
+              >Plone, Python, HTMX, Javascript, HTML, CSS, Bootstrap</span
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Modal -->
+    <div
+      id="imageModal"
+      class="hidden fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
+    >
+      <img
+        id="modalImage"
+        src=""
+        class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg"
+      />
+    </div>
+    <!-- JS -->
+    <script>
+      // Swiper init
+      document.querySelectorAll(".project-swiper").forEach((el) => {
+        new Swiper(el, {
+          loop: true,
+          pagination: {
+            el: el.querySelector(".swiper-pagination"),
+            clickable: true,
+          },
+        });
+      });
+
+      // Modal image preview
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+
+      function openModal(src) {
+        modal.classList.remove("hidden");
+        modalImg.src = src;
+      }
+
+      modal.addEventListener("click", () => {
+        modal.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>
